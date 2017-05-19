@@ -14,14 +14,20 @@
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
 title: Michael Tamaki
-# email: your-email@domain.com
 description: > # this means to ignore newlines until "baseurl:"
   Michael Tamaki is an undergraduate Computer Science student at UC Berkeley.
   He is interested in web dev and the marching arts.
-baseurl: "/blog" # the subpath of your site, e.g. /blog
+baseurl: "" # the subpath of your site, e.g. /blog
 url: "" # the base hostname & protocol for your site, e.g. http://example.com
-# twitter_username: jekyllrb
+permalink: /blog/:categories/:title.html
 github_username:  MichaelTamaki
+linkedin_username: michaeltamaki
+
+defaults:
+  - scope:
+      path: "images"
+    values:
+      image: true
 
 # Build settings
 markdown: kramdown
