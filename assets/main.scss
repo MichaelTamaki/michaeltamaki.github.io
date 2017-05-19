@@ -37,15 +37,11 @@
   width:         calc(50% - (#{$spacing-unit} / 2));
 }
 
-/*@include media-query($on-laptop) {
-  .home-col-1,
-  .home-col-2 {
-    width: -webkit-calc(50% - (#{$spacing-unit} / 2));
-    width:         calc(50% - (#{$spacing-unit} / 2));
-  }
-}*/
-
 @include media-query($on-palm) {
+  .home-col-wrapper {
+    display: initial;
+    align-items: initial;
+  }
   .home-col {
     float: none;
     width: -webkit-calc(100% - (#{$spacing-unit} / 2));
