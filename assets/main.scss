@@ -1,0 +1,87 @@
+---
+# Only the main Sass file needs front matter (the dashes are enough)
+---
+
+@import "minima";
+
+/**
+ * Home
+ */
+.site-home {
+  border-top: 1px solid $grey-color-light;
+  padding: $spacing-unit 0;
+}
+
+.home-col-wrapper {
+  @include relative-font-size(0.9375);
+  margin-left: -$spacing-unit / 2;
+  @extend %clearfix;
+
+  display: flex;
+  align-items: center;
+}
+
+.home-col {
+	float: left;
+  margin-bottom: $spacing-unit / 2;
+  padding-left: $spacing-unit / 2;
+}
+
+.home-col-1 {
+  width: -webkit-calc(50% - (#{$spacing-unit} / 2));
+  width:         calc(50% - (#{$spacing-unit} / 2));
+}
+
+.home-col-2 {
+  width: -webkit-calc(50% - (#{$spacing-unit} / 2));
+  width:         calc(50% - (#{$spacing-unit} / 2));
+}
+
+/*@include media-query($on-laptop) {
+  .home-col-1,
+  .home-col-2 {
+    width: -webkit-calc(50% - (#{$spacing-unit} / 2));
+    width:         calc(50% - (#{$spacing-unit} / 2));
+  }
+}*/
+
+@include media-query($on-palm) {
+  .home-col {
+    float: none;
+    width: -webkit-calc(100% - (#{$spacing-unit} / 2));
+    width:         calc(100% - (#{$spacing-unit} / 2));
+  }
+}
+
+.home-info {
+	list-style: none;
+	margin: auto;
+}
+
+.home-title {
+  @include relative-font-size(1.625);
+  font-weight: 300;
+  line-height: $base-line-height * $base-font-size * 2.25;
+  letter-spacing: -1px;
+  margin-bottom: 0;
+}
+
+/**
+ * Wrapper
+ */
+.home-wrapper {
+	/* Center the wrapper */
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translateX(-50%) translateY(-50%);
+
+  max-width: -webkit-calc(#{$content-width} - (#{$spacing-unit} * 2));
+  max-width:         calc(#{$content-width} - (#{$spacing-unit} * 2));
+  @extend %clearfix;
+
+  @include media-query($on-laptop) {
+    max-width: -webkit-calc(#{$content-width} - (#{$spacing-unit}));
+    max-width:         calc(#{$content-width} - (#{$spacing-unit}));
+  }
+}
