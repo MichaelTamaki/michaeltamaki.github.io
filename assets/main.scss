@@ -14,7 +14,7 @@
 
 .home-col-wrapper {
   @include relative-font-size(0.9375);
-  margin-left: -$spacing-unit / 2;
+  /*margin-left: -$spacing-unit / 2;*/
   @extend %clearfix;
 
   display: flex;
@@ -24,54 +24,60 @@
 .home-col {
 	float: left;
   margin-bottom: $spacing-unit / 2;
-  padding-left: $spacing-unit / 2;
+  padding: $spacing-unit / 2;
 }
 
-.home-col-1 {
+.home-col-1, .home-col-2 {
   width: -webkit-calc(50% - (#{$spacing-unit} / 2));
   width:         calc(50% - (#{$spacing-unit} / 2));
 }
 
-.home-col-2 {
-  width: -webkit-calc(50% - (#{$spacing-unit} / 2));
-  width:         calc(50% - (#{$spacing-unit} / 2));
+.home-info {
+  list-style: none;
+  margin: auto;
+}
+
+.home-title {
+  @include relative-font-size(2.25);
+  line-height: 115%;
+  font-weight: 300;
+  letter-spacing: -1px;
+  margin-bottom: 0;
+}
+
+.home-html, .home-body, .home-content {
+  height: 100%;
+}
+
+.home-content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 @include media-query($on-palm) {
+  .home-html, .home-body, .home-content {
+    height: auto;
+    min-height: 100%;
+  }
   .home-col-wrapper {
     display: initial;
     align-items: initial;
   }
   .home-col {
     float: none;
-    width: -webkit-calc(100% - (#{$spacing-unit} / 2));
-    width:         calc(100% - (#{$spacing-unit} / 2));
+    width: -webkit-calc(100% - #{$spacing-unit});
+    width:         calc(100% - #{$spacing-unit});
   }
-}
-
-.home-info {
-	list-style: none;
-	margin: auto;
-}
-
-.home-title {
-  @include relative-font-size(1.625);
-  font-weight: 300;
-  line-height: $base-line-height * $base-font-size * 2.25;
-  letter-spacing: -1px;
-  margin-bottom: 0;
+  .home-title {
+    @include relative-font-size(1.36);
+  }
 }
 
 /**
  * Wrapper
  */
 .home-wrapper {
-	/* Center the wrapper */
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translateX(-50%) translateY(-50%);
-
   max-width: -webkit-calc(#{$content-width} - (#{$spacing-unit} * 2));
   max-width:         calc(#{$content-width} - (#{$spacing-unit} * 2));
   @extend %clearfix;
