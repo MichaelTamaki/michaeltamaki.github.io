@@ -23,6 +23,8 @@ permalink: /blog/:categories/:title.html
 github_username:  MichaelTamaki
 linkedin_username: michaeltamaki
 
+google_analytics: UA-99638417-1
+
 defaults:
   - scope:
       path: "images"

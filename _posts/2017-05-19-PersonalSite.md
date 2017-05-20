@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "My Personal Site"
-date:   2017-05-19 01:00:00 -0800
+date:   2017-05-19 01:00:00 -0700
 categories: project
 img: "personalsite_img.png"
 ---

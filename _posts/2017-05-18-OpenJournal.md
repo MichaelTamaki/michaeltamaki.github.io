@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Creating OpenJournal"
-date:   2017-05-18 01:00:00 -0800
+date:   2017-05-18 01:00:00 -0700
 categories: project
 img: "openjournal_img.png"
 ---
