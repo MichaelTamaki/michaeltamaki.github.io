@@ -4,6 +4,10 @@
 
 @import "minima";
 
+.social-media-list {
+  margin: 0;
+}
+
 /**
  * Home
  */
@@ -23,8 +27,8 @@
 
 .home-col {
 	float: left;
-  margin-bottom: $spacing-unit / 2;
-  padding: $spacing-unit / 2;
+  padding-bottom: $spacing-unit / 2;
+  padding-right: $spacing-unit / 2;
 }
 
 .home-col-1, .home-col-2 {
@@ -71,9 +75,6 @@
   }
 }
 
-/**
- * Wrapper
- */
 .home-wrapper {
   max-width: -webkit-calc(#{$content-width} - (#{$spacing-unit} * 2));
   max-width:         calc(#{$content-width} - (#{$spacing-unit} * 2));
@@ -83,4 +84,32 @@
     max-width: -webkit-calc(#{$content-width} - (#{$spacing-unit}));
     max-width:         calc(#{$content-width} - (#{$spacing-unit}));
   }
+}
+
+/**
+ * Blog
+ */
+.post-blob {
+  position: relative;
+  width: 100%;
+  border: 1px solid black;
+
+  h2 {
+    position: absolute;
+    top: -2px;
+    left: 0px;
+    width: 100%;
+
+    span {
+      color: white; 
+      background: rgb(0, 0, 0); /* fallback color */
+      background: rgba(0, 0, 0, 0.7);
+      padding: 10px;
+      @include relative-font-size(1.0);
+    }
+  }
+}
+
+.post-link:hover {
+  color: $grey-color-light;
 }
