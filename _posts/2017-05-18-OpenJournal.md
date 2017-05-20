@@ -3,6 +3,7 @@ layout: post
 title:  "Creating OpenJournal"
 date:   2017-05-18 01:00:00 -0800
 categories: project
+img: "openjournal_img.png"
 ---
 Check out the [Github Repository](https://github.com/MichaelTamaki/OpenJournal) and [live site](https://warm-reaches-94999.herokuapp.com/)!
 
