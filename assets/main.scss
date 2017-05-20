@@ -69,9 +69,6 @@
     width: -webkit-calc(100% - #{$spacing-unit});
     width:         calc(100% - #{$spacing-unit});
   }
-  .home-title {
-    @include relative-font-size(1.36);
-  }
 }
 
 /**
