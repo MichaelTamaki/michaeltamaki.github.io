@@ -10,16 +10,14 @@ Check out the [Github Repository](https://github.com/MichaelTamaki/michaeltamaki
 # Introduction
 To make implementation with Github Pages easy, I used Jekyll to power my blog. It gave me the power to be able to create blog posts from markdown files. I based my site off of the default theme, minima. To suit my needs, I ended up changing most of the HTML layouts and Sass styles. The home/landing screen was made from scratch, and I changed the default blog listing to also include an image, along with the title. This allowed me to keep the simple, minimalistic style of the original, but added my own individual personality to the theme.
 
-# Responsive Design and Conquering the Evil Flexbox
-One of the things that bothers me the most in web design is vertically centering elements. I tend to try hacky solutions, such as using `transformY` to manually center. However, I ended up finding that this did not make mobile viewing very pretty...
+# Responsive Design
+For all the new pages and layouts I created, I tried to replicate the responsive design found in the existing minima design. One the challenges was my home screen. My original plan was to have one column for my picture, and another for site navigation buttons. On a small phone screen, it would compact into a single column. I also attempted to vertically center the elements, which worked on larger screens, but this did not work as intended on an iPhone 5 in landscape mode.  
 
 ![Personal Site Screenshot]({{ site.url }}/images/personalsite1.png)
 
-My head would get chopped off... Not great. And thus, I turned to my greatest of enemies, the flexbox. In the past, I could very rarely get it to work. My friends often thought that I was cursed by the flex gods. However, about an hour or two into the process of adding flex, the flex gods broke the curse. They blessed me with knowledge, via the Google Chrome inspector, showing me that I had to give the html, body, and wrapper classes a 100% height. *Thank you flex god.* I feel a lot more comfortable with flex now. Then, I checked the mobile site. My head was still chopped off. Turns out the 100% height wasn't big enough for the iPhone 5 in landscape mode to contain both my head AND the text. Thus, for phone screens, I had to ditch the vertical centering, as I had to switch the height to auto... So I didn't quite conquer the mobile phone screen, but I did conquer flexbox!
+I tried using things like flexbox, but eventually I found that the small height of the phone screen could not fit all the elements in the site. To solve this issue, I had to adapt the height of the site to be either 100% of the screen height, or the height of the photo plus site navigation in a single column. 
 
 Other aspects of responsive design can be seen in the footer, where the two columns will combine into a single column when the screen is too thin. The blog titles also shrink on phone screens so they can fit in one line.
-
-If you are using a phone and find a weird visual bug, please let me know! I'm still learning and it would greatly help me.
 
 # Unleashing the Power of Jekyll
 While building this site, I found that there were a lot of ways that I could customize the theme and really make the site my own. The most significant feature I made was the blog post listings. I added a field to the front matter for a preview image file name. This allowed me to add an image with the title when listing my blog posts. This helped add color and more detail in my blog listing, rather than just a title. The Liquid language for HTML was also very helpful. At the beginning of each blog post, I calculated the reading time based on the length of the content. The number of words can be found with
