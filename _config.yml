@@ -18,7 +18,7 @@ description: > # this means to ignore newlines until "baseurl:"
   I am a junior at UC Berkeley looking for a spring or summer internship in full stack web development.
   I love engineering together and deploying applications that make an impact. Through creating personal
   projects and collaborating with mentors, I've gained an understanding of backend development in Django
-  and frontend development in Sass, jQuery, and React. Please check out my personal projects and website
+  and frontend development in Sass, jQuery, and Vue.js. Please check out my personal projects and website
   for more information, and I look forward to getting in contact with you!
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "" # the base hostname & protocol for your site, e.g. http://example.com
