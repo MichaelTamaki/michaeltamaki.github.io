@@ -1,4 +1,25 @@
-# Michael Tamaki Personal Website
-The website serves as a personal branding tool to give more details of the projects and experiences that I've been a part of. The blog is powered by Jekyll, which allows for easy integration with Github Pages.
-- Start a local development server: `jekyll serve`  
-- Build html pages from markdown posts: `jekyll build`  
+# michaeltamaki.github.io
+
+My personal website!
+
+Redesigned in January 2020.
+
+## Install dependencies
+
+```
+npm install
+```
+
+## Build website
+
+```
+npm run build
+```
+
+The build output will be in `dist/` and you can view the built website at `dist/index.html`.
+
+## Build upon changes to files
+
+```
+npm run watch
+```

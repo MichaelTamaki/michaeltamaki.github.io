@@ -1,0 +1,82 @@
+@charset "utf-8";
+
+$fa-font-path: "assets/webfonts";
+@import "../../node_modules/@fortawesome/fontawesome-free/scss/fontawesome.scss";
+@import "../../node_modules/@fortawesome/fontawesome-free/scss/solid.scss";
+@import "../../node_modules/@fortawesome/fontawesome-free/scss/brands.scss";
+
+@import "../../node_modules/bulma/sass/utilities/initial-variables.sass";
+$widescreen-enabled: false;
+$fullhd-enabled: false;
+$body-font-size: 1.2em;
+@import "../../node_modules/bulma/sass/utilities/_all";
+@import "../../node_modules/bulma/sass/base/_all";
+@import "../../node_modules/bulma/sass/components/menu.sass";
+@import "../../node_modules/bulma/sass/elements/container.sass";
+@import "../../node_modules/bulma/sass/elements/image.sass";
+@import "../../node_modules/bulma/sass/elements/title.sass";
+@import "../../node_modules/bulma/sass/grid/columns.sass";
+@import "../../node_modules/bulma/sass/layout/footer.sass";
+@import "../../node_modules/bulma/sass/layout/hero.sass";
+@import "../../node_modules/bulma/sass/layout/section.sass";
+
+html {
+  font-size: 100%;
+
+  @include tablet-only {
+    font-size: 95%;
+  }
+
+  @include mobile {
+    font-size: 90%;
+  }
+}
+
+.social-icon:not(:first-child) {
+  margin-left: 0.5rem;
+}
+
+.header--portrait {
+  margin: auto;
+  border: $primary-light 0.5rem solid;
+  width: 16rem;
+
+  @include tablet-only {
+    width: 15rem;
+  }
+
+  @include mobile {
+    width: 14rem;
+  }
+}
+
+$navigation-width: 150px;
+
+.navigation {
+  position: sticky;
+  top: 1.5rem; // based on $section-padding in bulma
+  width: $navigation-width;
+}
+
+.container-section {
+  @extend .section;
+
+  padding-left: 0;
+  padding-right: 0;
+
+  &:first-child {
+    padding-top: 0;
+  }
+
+  &:last-child {
+    padding-bottom: 0;
+  }
+
+  p:not(:first-child) {
+    margin-top: $block-spacing;
+  }
+}
+
+.title.title-top-spacing {
+  margin-top: $block-spacing;
+}
