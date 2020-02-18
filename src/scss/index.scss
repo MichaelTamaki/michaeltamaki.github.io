@@ -23,33 +23,66 @@ $blue:         hsl(217, 71%,  53%);
 $purple:       hsl(271, 100%, 71%);
 $red:          hsl(348, 86%, 61%);
 
+.is-orange {
+  color: $orange;
+}
+
+.is-green {
+  color: $green;
+}
+
+.is-cyan {
+  color: $cyan;
+}
+
+.is-purple {
+  color: $purple;
+}
+
+// Breakpoints
+$tablet: 769px;
+$desktop: 960px;
+
+@mixin mobile {
+  @media (max-width: $tablet) { @content; }
+}
+
+@mixin tablet {
+  @media (min-width: $tablet) and (max-width: $desktop) { @content; }
+}
+
+@mixin desktop {
+  @media (min-width: $desktop) { @content; }
+}
+
 body {
   max-width: 768px;
   margin: auto;
-  padding: 0.2rem;
+  padding: 0.5rem;
   background: $white-ter;
-  // Defaults for body text
   color: $grey-dark;
   font-family: Cantarell,"Fira Sans","Droid Sans","Helvetica Neue",Helvetica,Arial,sans-serif;
   font-weight: normal;
   font-size: 1rem;
+  text-rendering: optimizeLegibility;
 }
 
 header {
-  padding: 6rem 0;
+  padding: 6rem 1rem;
+  text-align: center;
 
-  .header--title {
-    font-size: 3rem;
-    font-weight: 600;
+  .header--paragraph {
+    font-size: 2rem;
+    font-weight: 500;
     color: $black-ter;
-    margin: 0;
-  }
 
-  .header--subtitle {
-    font-size: 1.5rem;
-    font-weight: 400;
-    color: $grey-dark;
-    margin: 0;
+    @include tablet {
+      font-size: 2.5rem;
+    }
+
+    @include desktop {
+      font-size: 3rem;
+    }
   }
 
   .header--wave {
@@ -60,6 +93,19 @@ header {
     animation-timing-function: ease-in-out;
     animation-iteration-count: infinite;
     animation-direction: alternate;
+  }
+
+  .header--link {
+    display: inline-block;
+    text-decoration: none;
+    margin: 0;
+    margin-right: 0.25rem;
+  }
+
+  .header--icon {
+    display: inline-block;
+    width: 2rem;
+    height: 2rem;
   }
 }
 

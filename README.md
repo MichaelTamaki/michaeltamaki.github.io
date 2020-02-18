@@ -11,3 +11,9 @@ npm install
 ```
 npm run serve
 ```
+
+## Just build
+
+```
+npm run build
+```
