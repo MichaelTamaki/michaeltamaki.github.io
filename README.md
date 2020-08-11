@@ -1,4 +1,27 @@
-# Michael Tamaki Personal Website
-The website serves as a personal branding tool to give more details of the projects and experiences that I've been a part of. The blog is powered by Jekyll, which allows for easy integration with Github Pages.
-- Start a local development server: `jekyll serve`  
-- Build html pages from markdown posts: `jekyll build`  
+# michaeltamaki.github.io
+
+Michael Tamaki personal website using Gatsby!
+
+## Install dependencies
+
+```
+npm install
+```
+
+## Start development server
+
+```
+npm start
+```
+
+## Run Prettier and ESLint
+
+```
+npm run format
+```
+
+## Build for production
+
+```
+npm run build
+```
