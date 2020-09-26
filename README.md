@@ -25,3 +25,11 @@ npm run format
 ```
 npm run build
 ```
+
+## Deploy to Github Pages
+
+This will automatically be run on every master branch run via Github Actions.
+
+```
+npm run deploy
+```
