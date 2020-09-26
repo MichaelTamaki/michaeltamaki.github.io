@@ -27,8 +27,8 @@ jobs:
     - name: Download build result
       uses: actions/download-artifact@v2
       with:
-        name: homework
-    - name: public
+        name: public
+    - name: Push to gh-pages branch
       uses: peaceiris/actions-gh-pages@v3
       with:
         github_token: ${{ secrets.GITHUB_TOKEN }}
