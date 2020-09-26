@@ -43,7 +43,7 @@
     "serve": "gatsby serve",
     "clean": "gatsby clean",
     "test": "echo \"Write tests! -> https://gatsby.dev/unit-testing\" && exit 1",
-    "deploy": "gh-pages --dist public --no-history https://$GITHUB_TOKEN@github.com/MichaelTamaki/michaeltamaki.github.io.git"
+    "deploy": "gh-pages --dist public --no-history --user Michael Tamaki <michaeltamaki@pm.me> https://$GITHUB_TOKEN@github.com/MichaelTamaki/michaeltamaki.github.io.git"
   },
   "repository": {
     "type": "git",
