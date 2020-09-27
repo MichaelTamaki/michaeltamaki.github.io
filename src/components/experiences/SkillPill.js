@@ -7,7 +7,7 @@ function SkillPill({ skill, selectedFilters, toggleFilter, ...props }) {
   return (
     <button
       className={`${skillEnabled ? "bg-green-300" : "bg-gray-400"}
-      inline-block hover:bg-green-400 rounded-full mr-2 px-3 py-1 text-sm font-semibold transition-all duration-150 ease-linear`}
+      inline-block hover:bg-green-400 rounded-full mr-2 px-3 py-1 text-sm font-semibold`}
       role="checkbox"
       aria-checked={skillEnabled}
       aria-describedby={ariaDescribedBy}
