@@ -4,7 +4,9 @@ import PropTypes from "prop-types"
 function SocialLink({ href, Icon, text, isLightText }) {
   return (
     <a
-      className={`${isLightText ? "hover:text-green-400" : "hover:text-green-800"} inline-block`}
+      className={`${
+        isLightText ? "hover:text-green-400" : "hover:text-green-800"
+      } inline-block`}
       href={href}
       target="_blank"
       rel="noreferrer"
