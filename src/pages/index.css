@@ -12,6 +12,10 @@ h1, h2, h3, h4, h5, h6 {
   @apply leading-tight;
 }
 
+a, button {
+  @apply transition-colors duration-150 ease-linear;
+}
+
 /* Classes for specific components */
 
 .landing-bg {
@@ -27,24 +31,18 @@ h1, h2, h3, h4, h5, h6 {
 
 @screen sm {
   .card-container {
-    @apply grid;
     grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
-    gap: 1rem;
   }
 }
 
 @screen md {
   .card-container {
-    @apply grid;
     grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-    gap: 1rem;
   }
 }
 
 @screen lg {
   .card-container {
-    @apply grid;
     grid-template-columns: repeat(auto-fill, minmax(365px, 1fr));
-    gap: 1rem;
   }
 }
