@@ -1,3 +1,5 @@
+const path = require("path")
+
 module.exports = {
   plugins: [
     `gatsby-plugin-react-helmet`,
@@ -5,7 +7,7 @@ module.exports = {
       resolve: `gatsby-source-filesystem`,
       options: {
         name: `images`,
-        path: `${__dirname}/src/images`,
+        path: path.join(__dirname, "src", "images"),
       },
     },
     `gatsby-transformer-sharp`,
