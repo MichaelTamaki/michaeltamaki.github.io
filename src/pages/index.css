@@ -5,7 +5,7 @@
 /* Global defaults */
 
 html {
-  @apply text-gray-800 bg-gray-200 fill-current text-base font-sans;
+  @apply text-gray-800 bg-gray-100 fill-current text-base font-sans;
 }
 
 h1, h2, h3, h4, h5, h6 {

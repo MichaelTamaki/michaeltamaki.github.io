@@ -6,7 +6,7 @@ function SkillPill({ skill, selectedFilters, toggleFilter, ...props }) {
   const skillEnabled = selectedFilters.includes(skill)
   return (
     <button
-      className={`${skillEnabled ? "bg-green-300" : "bg-gray-400"}
+      className={`${skillEnabled ? "bg-green-300" : "bg-gray-300"}
       inline-block hover:bg-green-400 rounded-full mr-2 px-3 py-1 text-sm font-semibold`}
       role="checkbox"
       aria-checked={skillEnabled}
