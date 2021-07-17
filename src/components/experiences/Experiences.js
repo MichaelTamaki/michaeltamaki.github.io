@@ -61,7 +61,7 @@ function Experiences() {
             value={selectedSort}
             onChange={onSortChange}
             onBlur={onSortChange}
-            className="block appearance-none bg-white border border-gray-400 hover:border-gray-500 px-2 py-1 pr-8 rounded shadow leading-tight focus:outline-none focus:shadow-outline"
+            className="block appearance-none bg-white border border-gray-400 hover:border-gray-500 px-2 py-1 pr-8 rounded shadow leading-tight focus:outline-none focus:ring"
           >
             {Object.values(SORT_BY_KEYS).map((key) => (
               <option key={key} value={key}>

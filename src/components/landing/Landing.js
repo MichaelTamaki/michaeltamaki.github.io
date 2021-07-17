@@ -4,7 +4,7 @@ import SocialLinkList from "../util/SocialLinkList"
 
 function Landing() {
   return (
-    <section className="bg-gradient-to-br from-teal-600 to-green-900">
+    <section className="bg-gradient-to-br from-green-500 to-green-900">
       <div className="py-16 md:py-32 landing-bg">
         <div className="container text-center mx-auto">
           <div className="bg-gray-100 rounded-lg p-6 sm:p-8 shadow-2xl inline-flex flex-col sm:flex-row">

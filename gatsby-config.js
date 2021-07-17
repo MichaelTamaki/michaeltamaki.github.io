@@ -10,13 +10,9 @@ module.exports = {
         path: path.join(__dirname, "src", "images"),
       },
     },
+    `gatsby-plugin-image`,
+    `gatsby-plugin-sharp`,
     `gatsby-transformer-sharp`,
-    {
-      resolve: `gatsby-plugin-sharp`,
-      options: {
-        defaultQuality: 100,
-      },
-    },
     `gatsby-plugin-postcss`,
   ],
 }
