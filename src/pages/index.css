@@ -43,6 +43,6 @@ a, button {
 
 @screen lg {
   .card-container {
-    grid-template-columns: repeat(auto-fill, minmax(365px, 1fr));
+    grid-template-columns: repeat(auto-fill, minmax(375px, 1fr));
   }
 }
