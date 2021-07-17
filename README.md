@@ -5,7 +5,7 @@ Michael Tamaki personal website using Gatsby!
 ## Install dependencies
 
 ```
-npm install
+npm ci
 ```
 
 ## Start development server

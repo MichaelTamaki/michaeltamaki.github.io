@@ -6,9 +6,10 @@ function Summary() {
     <div className="container mx-auto my-16 sm:my-32 px-3 flex flex-col sm:flex-row items-center content-center">
       <div className="flex-auto sm:w-2/3 pr-3">
         <h2 className="text-2xl">
-          Hello! I am a recent Computer Science graduate from UC Berkeley with
-          an interest in full stack web development. I currently work on
-          end-user facing features for Okta. I look forward to connecting with
+          Hello! I&apos;m a software engineer with an interest in front-end and
+          full stack development. Currently, I work at Okta on end-user facing
+          features and admin facing data visualizations. Previously, I studied
+          Computer Science at UC Berkeley. I look forward to connecting with
           you!
         </h2>
       </div>
