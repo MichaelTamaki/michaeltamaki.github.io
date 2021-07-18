@@ -15,7 +15,7 @@ function Landing() {
               <div className="mb-3">
                 <h1 className="text-2xl text-gray-900">Michael Tamaki</h1>
                 <h2 className="text-green-800">
-                  Front-end / Full-Stack Developer
+                  Front-end / Full Stack Engineer
                 </h2>
               </div>
               <SocialLinkList />
