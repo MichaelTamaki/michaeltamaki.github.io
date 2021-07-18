@@ -74,7 +74,7 @@ function Experiences() {
           </div>
         </div>
       </div>
-      <div className="card-container mt-6">
+      <div className="mt-6 grid gap-4 grid-cols-1 md:grid-cols-2 xl:grid-cols-3">
         {selectedCards.map((cardData) => (
           <ExperienceCard
             {...cardData}

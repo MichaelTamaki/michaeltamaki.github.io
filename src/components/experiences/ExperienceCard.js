@@ -31,7 +31,7 @@ function ExperienceCard({
           <p>
             <a
               href={link}
-              className="font-bold hover:text-green-800"
+              className="font-bold hover:text-green-800 break-words"
               target="_blank"
               rel="noreferrer"
             >
@@ -62,7 +62,7 @@ ExperienceCard.propTypes = {
       name: PropTypes.string,
       date: PropTypes.string,
     })
-  ).isRequired,
+  ),
   description: PropTypes.string.isRequired,
   skills: PropTypes.arrayOf(PropTypes.string).isRequired,
   selectedFilters: PropTypes.arrayOf(PropTypes.string).isRequired,
