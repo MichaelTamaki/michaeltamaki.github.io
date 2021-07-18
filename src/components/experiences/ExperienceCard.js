@@ -62,7 +62,7 @@ ExperienceCard.propTypes = {
       name: PropTypes.string,
       date: PropTypes.string,
     })
-  ).isRequired,
+  ),
   description: PropTypes.string.isRequired,
   skills: PropTypes.arrayOf(PropTypes.string).isRequired,
   selectedFilters: PropTypes.arrayOf(PropTypes.string).isRequired,
