@@ -31,7 +31,7 @@ function ExperienceCard({
           <p>
             <a
               href={link}
-              className="font-bold hover:text-green-800"
+              className="font-bold hover:text-green-800 break-words"
               target="_blank"
               rel="noreferrer"
             >
