@@ -18,3 +18,8 @@ jobs:
         access-token: ${{ secrets.ACCESS_TOKEN }}
         deploy-branch: gh-pages
         skip-publish: ${{ github.ref != 'refs/heads/master' }}
+    - name: Upload build result
+      uses: actions/upload-artifact@v2
+      with:
+        name: public
+        path: public/
