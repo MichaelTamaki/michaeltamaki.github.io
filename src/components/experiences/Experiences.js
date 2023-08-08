@@ -13,7 +13,7 @@ function Experiences() {
     let cards = CARD_DATA.slice()
     if (selectedFilters.length !== 0) {
       cards = cards.filter((card) =>
-        selectedFilters.some((skill) => card.skills.includes(skill))
+        selectedFilters.some((skill) => card.skills.includes(skill)),
       )
     }
     cards.sort(SORT_BY_FNS[selectedSort])
