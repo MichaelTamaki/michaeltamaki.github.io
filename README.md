@@ -5,6 +5,7 @@ Michael Tamaki personal website using Gatsby!
 ## Install dependencies
 
 ```
+nvm use
 npm ci
 ```
 
