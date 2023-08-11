@@ -29,7 +29,8 @@ export const CARD_DATA = [
     title: "Okta, Inc.",
     link: "https://www.okta.com",
     positions: [
-      { name: "Software Engineer", date: "August '19 to Present" },
+      { name: "Senior Software Engineer", date: "November '21 to Present" },
+      { name: "Software Engineer", date: "August '19 to November '21" },
       { name: "Software Engineer Intern", date: "Summer '18" },
     ],
     description:
@@ -77,8 +78,7 @@ export const CARD_DATA = [
   {
     title: "Personal Website",
     link: "https://github.com/MichaelTamaki/michaeltamaki.github.io",
-    description:
-      "Website for personal brand built with UX and accessibility in mind. Users can easily find relevant experiences and projects.",
+    description: "Website for personal brand.",
     skills: [SKILLS.REACT],
     defaultOrder: 4,
   },
